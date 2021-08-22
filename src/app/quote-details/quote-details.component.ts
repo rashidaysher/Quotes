@@ -6,7 +6,7 @@ import {Quote} from '../quote'
   styleUrls: ['./quote-details.component.scss']
 })
 export class QuoteDetailsComponent implements OnInit {
-  @Input() 
+  @Input() quoty: Quote;
 
   constructor() { }
 
