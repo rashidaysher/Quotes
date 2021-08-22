@@ -1,4 +1,4 @@
-<div>
+<!-- <div>
 <h1>
 Millenial Quotes
 </h1>
@@ -8,4 +8,32 @@ Millenial Quotes
     </li>
 </ul>
 
+</div> -->
+<mat-toolbar color = "primary">
+    <span>Card view demo</span>
+</mat-toolbar>
+
+<div class="content"> 
+    <div class="fxLayout">
+        <div *ngFor="let num of [1,2,3,4,5,6]">
+            <mat-card class="mat-elevation-z4">
+            </mat-card-header>
+            <mat-card-title>Images</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="./../assets/images/woman-570883_1920.jpg" alt="">
+            <mat-card-content>
+            <p>
+                Do not eat fair
+            </p>
+            </mat-card-content>
+        
+            <mat-card-action>
+                <button mat-button>Upvote</button>
+                <button mat-button>Downvote</button>
+            </mat-card-action>
+        
+
+        </div>
+    </div> 
+     
 </div>
