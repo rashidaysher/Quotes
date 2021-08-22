@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { QuoteComponent } from './quote/quote.component';
+import { DateCountPipe } from './date-count.pipe';
 
 
 
@@ -15,7 +16,7 @@ import { QuoteComponent } from './quote/quote.component';
 
 
 @NgModule({
-  declarations: [AppComponent, QuoteDetailComponent, QuoteComponent, ],
+  declarations: [AppComponent, QuoteDetailComponent, QuoteComponent, DateCountPipe, ],
   imports: [
     BrowserModule,
     AppRoutingModule,
