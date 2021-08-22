@@ -6,6 +6,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 
 
 
@@ -15,7 +16,7 @@ import { AppComponent } from './app.component';
 
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, QuoteDetailsComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
