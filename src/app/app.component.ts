@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'quotes';
+  quote:string = 'He who eats fare shall not see heaven';
 }
