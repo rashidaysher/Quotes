@@ -1,4 +1,4 @@
-// @import "~bootstrap/dist/css/bootstrap.css"
+@import "~bootstrap/dist/css/bootstrap.css";
 
 *{
     padding: 0;
@@ -9,6 +9,7 @@
 
 body{
     background-image: url(../src/assets/images/woman-570883_1920.jpg);
+    opacity: 0.9;
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

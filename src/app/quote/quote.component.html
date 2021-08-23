@@ -1,21 +1,65 @@
-<h1>Milllenial Quotes</h1>
-<hr>
-<ul>
-    <div class="row">
-        <div class="col-md-6">
-          <div *ngFor='let quote of quotes;let i = index'>
-            <div>
-              <h4 id={{i}} appStrikethrough>{{quote.name}} due on {{quote.completeDate|date|uppercase}}</h4>
-              <button (click)='toggleDetails(i)' class="btn btn-primary">Toggle Details</button>
-            </div>
+
+    <!-- <div class="container">
+        <h1>Quotes App</h1>
+        <hr>
+      <h3>Selected Quotes</h3><br>
+        <div class="row gx-5">
+          <div class="col" >
     
-            <div *ngIf='quote.showDescription'>
-              <app-quote-detail  [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
+            <div *ngFor='let quote of quotes;let i = index'>
+              <div>
+                <h6 id={{i}} appStrikethrough> {{quote.author}} posted on {{quote.postedDate|date|uppercase}}</h6>
+                <button (click)='toggleDetails(i)' class="btn btn-primary">Details</button>
+              </div>
+      
+              <div *ngIf='quote.showDescription'>
+                <app-quote-detail  [quote]='quote' (isComplete) = 'completeQuote($event,i)'></app-quote-detail>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    
-      <p *ngIf='quotes.length > 5'>You have too many goals</p>
-    </div>
+          <div class="col">
+            <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+          </div>
+        </div>     <div *ngIf='quote.showDescription'>
+                <app-quote-detail  [quote]='quote' (isComplete) = 'completeQuote($event,i)'></app-quote-detail>
+              </div>
+            </div> -->
+       
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container">
+        <h1>Millenial Goals</h1>
+        <hr>
+      
+        <div class="row">
+          <div class="col-md-6">
+            <div class="mr-4 card" *ngFor='let quote of quotes;let i = index'>
+              <div>
+                <h6 id={{i}} appStrikethrough>{{quote.name}} posted {{quote.completeDate|date|uppercase}}</h6>
+                <button (click)='toggleDetails(i)' class="btn btn-primary">Read Quote</button>
+              </div>
+      
+              <div *ngIf='quote.showDescription'>
+                <app-quote-detail  [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+          </div>
+        </div>
+       
+      </div> 
